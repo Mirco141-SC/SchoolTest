@@ -1,4 +1,5 @@
 fun main() {
+    //FOR TEST PURPOSES ONLY
     val test = SchoolTest(24, 1.0, 10.0)
 
     test.addMark(1.0)
