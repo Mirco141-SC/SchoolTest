@@ -24,7 +24,7 @@ class SchoolTestTest {
     fun constructor_minMarkValueNotDeclared_minMarkValueSetToDefault(){
         val test = SchoolTest(24, maxMarkValue = 10.0)
 
-        assertEquals(10.0, test.maxMark)
+        assertEquals(1.0, test.minMark)
     }
 
     @Test
@@ -79,22 +79,22 @@ class SchoolTestTest {
     fun getMaxMarkOccurrence_valueReturned() {
         val test = SchoolTest(24, 2.0, 10.0)
 
-        test.addMark(7.5)
+        test.addMark(2.0)
         test.addMark(8.0)
-        test.addMark(9.0)
+        test.addMark(10.0)
 
-        assertEquals(0, test.maxMarkOccurrence)
+        assertEquals(1, test.maxMarkOccurrence)
     }
 
     @Test
     fun getMinMarkOccurrence_valueReturned() {
         val test = SchoolTest(24, 2.0, 10.0)
 
-        test.addMark(7.5)
+        test.addMark(2.0)
         test.addMark(8.0)
-        test.addMark(9.0)
+        test.addMark(10.0)
 
-        assertEquals(0, test.minMarkOccurrence)
+        assertEquals(1, test.minMarkOccurrence)
     }
 
     /**** Setters ****/

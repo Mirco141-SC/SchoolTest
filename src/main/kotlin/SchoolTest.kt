@@ -66,13 +66,13 @@ class SchoolTest(studentsValue:Int, minMarkValue:Double = 1.0, maxMarkValue:Doub
 
     val maxMarkOccurrence: Int
         get() {
-            return occurrence(minMark)
+            return occurrence(maxMark)
         }
 
 
     val minMarkOccurrence: Int
         get() {
-            return occurrence(maxMark)
+            return occurrence(minMark)
         }
 
     fun addMark(value:Double) {
